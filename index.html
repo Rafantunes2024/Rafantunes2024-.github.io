@@ -90,5 +90,21 @@
     <script src="java/script.js"></script>
     <!-- azae -->
          <!-- azae -->
+
+         <a href="#" class="btn" onclick="openTelegram()">Participar</a>
+
+<script>
+    function openTelegram() {
+        // Verifica se o Telegram está instalado no dispositivo
+        var telegramLink = "https://t.me/UnityP2P?start=Quero_participar_da_mentoria";
+        window.location.href = telegramLink;
+
+        // Em alguns casos, pode ser necessário adicionar um atraso para o Telegram abrir corretamente
+        setTimeout(function() {
+            window.location.href = telegramLink;
+        }, 1000); // Um segundo de atraso
+    }
+</script>
+
 </body>
 </html>
